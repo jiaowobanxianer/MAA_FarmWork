@@ -40,5 +40,151 @@
     "啥也不干": {
         "action": "DoNothing"
     },
+    "对战": {
+        "recognition": "TemplateMatch",
+        "template": "对战.png",
+        "action": "Click",
+        "next": [
+            "55"
+        ]
+    },
+    "55": {
+        "recognition": "TemplateMatch",
+        "template": "55.png",
+        "action": "Click",
+        "next": [
+            "人机"
+        ]
+    },
+    "人机": {
+        "recognition": "TemplateMatch",
+        "template": "人机.png",
+        "action": "Click",
+        "next": [
+            "青铜"
+        ]
+    },
+    "青铜": {
+        "recognition": "TemplateMatch",
+        "template": "倔强青铜.png",
+        "action": "Click",
+        "next": [
+            "开始练习"
+        ]
+    },
+    "开始练习": {
+        "recognition": "TemplateMatch",
+        "template": "开始练习.png",
+        "action": "Click",
+        "next": [
+            "开始匹配"
+        ]
+    },
+    "开始匹配": {
+        "recognition": "TemplateMatch",
+        "template": "开始匹配.png",
+        "action": "Click",
+        "next": [
+            "确认游戏"
+        ],
+        "on_error": [
+            "开始匹配"
+        ]
+    },
+    "确认游戏": {
+        "recognition": "OCR",
+        "expected": [
+            "确认"
+        ],
+        "action": "Click",
+        "next": [
+            "选择英雄",
+            "确认游戏"
+        ]
+    },
+    "选择英雄": {
+        "recognition": "OCR",
+        "expected": [
+            "皮肤"
+        ],
+        "action": "Click",
+        "target": [
+            6,
+            76,
+            108,
+            120
+        ],
+        "next": [
+            "确定英雄"
+        ]
+    },
+    "确定英雄": {
+        "recognition": "TemplateMatch",
+        "template": "确定英雄.png",
+        "action": "Click",
+        "timeout": 100000,
+        "next": [
+            "加载游戏"
+        ]
+    },
+    "加载游戏": {
+        "recognition": "TemplateMatch",
+        "template": "打气.png",
+        "action": "DoNothing",
+        "timeout": 100000,
+        "next": [
+            "游戏中"
+        ]
+    },
+    "游戏中": {
+        "recognition": "TemplateMatch",
+        "template": "游戏内设置.png",
+        "action": "DoNothing",
+        "timeout": 1800000,
+        "next": [
+            "游戏结束"
+        ]
+    },
+    "游戏结束": {
+        "recognition": "TemplateMatch",
+        "template": "结束.png",
+        "action": "Click",
+        "next": [
+            "点击继续"
+        ]
+    },
+    "点击继续": {
+        "recognition": "OCR",
+        "expected": [
+            "点击此处继续"
+        ],
+        "action": "Click",
+        "next": [
+            "再次点击继续"
+        ]
+    },
+    "再次点击继续": {
+        "recognition": "OCR",
+        "expected": [
+            "点击此处继续"
+        ],
+        "action": "Click",
+        "next": [
+            "返回房间"
+        ]
+    },
+    "返回房间": {
+        "recognition": "TemplateMatch",
+        "template": "返回房间.png",
+        "action": "Click",
+        "next": [
+            "开始匹配"
+        ]
+    },
+    "返回大厅": {
+        "recognition": "TemplateMatch",
+        "template": "返回大厅.png",
+        "action": "Click",
+        "next": []
     }
 }
