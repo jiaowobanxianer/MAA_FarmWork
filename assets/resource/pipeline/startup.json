@@ -4,7 +4,8 @@
         "package": "com.tencent.tmgp.sgame",
         "timeout": 100000,
         "next": [
-            "登录游戏"
+            "登录游戏",
+            "更新游戏"
         ]
     },
     "关闭游戏": {
@@ -15,9 +16,18 @@
         "recognition": "TemplateMatch",
         "template": "开始游戏.png",
         "action": "Click",
-        "post_delay": 10000,
+        "timeout": 100000,
         "next": [
-            "叉"
+            "叉",
+            "更新游戏"
+        ]
+    },
+    "更新游戏": {
+        "recognition": "TemplateMatch",
+        "template": "确定.png",
+        "action": "Click",
+        "next": [
+            "登录游戏"
         ]
     }
 }
