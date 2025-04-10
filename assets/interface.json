@@ -30,12 +30,6 @@
             "repeat_coutn": 5
         },
         {
-            "name": "灵宝亲密度",
-            "entry": "灵宝亲密度",
-            "repeatable": true,
-            "repeat_coutn": -1
-        },
-        {
             "name": "礼包领取",
             "entry": "灵宝"
         }
