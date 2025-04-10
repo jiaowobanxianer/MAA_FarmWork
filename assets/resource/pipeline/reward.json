@@ -11,6 +11,20 @@
         "template": "灵宝亲密度.png",
         "action": "Click"
     },
+    "开始领奖": {
+        "post_delay": 2000,
+        "next": [
+            "领奖"
+        ]
+    },
+    "领奖": {
+        "post_delay": 20000,
+        "next": [
+            "灵宝"
+        ],
+        "focus": true,
+        "focus_tip": "等待zhong"
+    },
     "灵宝": {
         "recognition": "TemplateMatch",
         "template": "对战.png",
@@ -27,8 +41,16 @@
         ]
     },
     "礼包领取": {
-        "recognition": "TemplateMatch",
-        "template": "局内陪伴.png",
+        "recognition": "OCR",
+        "expected": [
+            "局内陪伴"
+        ],
+        "roi": [
+            272,
+            18,
+            160,
+            43
+        ],
         "target": [
             58,
             558,

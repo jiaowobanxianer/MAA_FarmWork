@@ -1,4 +1,18 @@
 {
+    "开始对战": {
+        "post_delay": 2000,
+        "next": [
+            "对战缓冲"
+        ]
+    },
+    "对战缓冲": {
+        "post_delay": 20000,
+        "next": [
+            "对战"
+        ],
+        "focus": true,
+        "focus_tip": "等待中"
+    },
     "对战": {
         "recognition": "OCR",
         "expected": [

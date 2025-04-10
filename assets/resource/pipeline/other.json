@@ -29,6 +29,12 @@
             "返回.png",
             "返回2.png"
         ],
+        "roi": [
+            23,
+            11,
+            100,
+            59
+        ],
         "timeout": 10000,
         "threshold": 0.8,
         "action": "Click",
