@@ -1,6 +1,13 @@
 {
     "灵宝亲密度": {
         "recognition": "TemplateMatch",
+        "template": "对战.png",
+        "next": [
+            "灵宝亲密度1"
+        ]
+    },
+    "灵宝亲密度1": {
+        "recognition": "TemplateMatch",
         "template": "灵宝亲密度.png",
         "action": "Click"
     },
@@ -13,7 +20,10 @@
             54,
             66
         ],
-        "action": "Click"
+        "action": "Click",
+        "next": [
+            "礼包领取"
+        ]
     },
     "礼包领取": {
         "recognition": "TemplateMatch",

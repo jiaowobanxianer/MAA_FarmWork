@@ -1,4 +1,8 @@
 {
+    "name": "MAA_FarmWork",
+    "version": "0.3.0",
+    "url": "https://github.com/jiaowobanxianer/MAA_FarmWork",
+    "custom_title": "MAA农活助手",
     "controller": [
         {
             "name": "安卓端",
@@ -7,7 +11,7 @@
     ],
     "resource": [
         {
-            "name": "官服",
+            "name": "腾讯扣扣",
             "path": [
                 "{PROJECT_DIR}/resource"
             ]
@@ -22,49 +26,24 @@
     "task": [
         {
             "name": "启动游戏",
-            "entry": "启动游戏"
+            "entry": "启动游戏",
+            "repeatable": false
         },
         {
             "name": "对战",
-            "entry": "对战"
+            "entry": "对战",
+            "repeatable": true,
+            "repeat_coutn": 5
         },
         {
             "name": "灵宝亲密度",
-            "entry": "灵宝亲密度"
-        },
-        {
-            "name": "灵宝",
-            "entry": "灵宝"
+            "entry": "灵宝亲密度",
+            "repeatable": true,
+            "repeat_coutn": -1
         },
         {
             "name": "礼包领取",
-            "entry": "礼包领取"
-        },
-        {
-            "name": "综合领奖",
-            "entry": "综合领奖"
+            "entry": "灵宝"
         }
-    ],
-    "option": {
-        "任务选项1": {
-            "cases": [
-                {
-                    "name": "文本1",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本1"
-                        }
-                    }
-                },
-                {
-                    "name": "文本2",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本2"
-                        }
-                    }
-                }
-            ]
-        }
-    }
+    ]
 }

@@ -1,0 +1,22 @@
+{
+    "叉": {
+        "recognition": "TemplateMatch",
+        "template": "叉.png",
+        "action": "Click",
+        "next": [
+            "叉"
+        ],
+        "timeout": 10000,
+        "on_error": [
+            "啥也不干"
+        ]
+    },
+    "啥也不干": {
+        "action": "DoNothing"
+    },
+    "Default": {
+        "interrupt": [
+            "叉"
+        ]
+    }
+}
