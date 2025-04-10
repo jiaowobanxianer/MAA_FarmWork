@@ -63,12 +63,8 @@ jobs:
     - uses: actions/checkout@v4
       with:
         submodules: true
-
-    - name: Install
-      shell: bash
-      run: |
-        python ./install.py ${{ needs.meta.outputs.tag }}
-    - name: Download MaaFramework
+        
+      name: Download MaaFramework
       uses: robinraju/release-downloader@v1
       with:
         repository: MaaXYZ/MaaFramework
@@ -77,6 +73,11 @@ jobs:
         out-file-path: "deps"
         extract: true
 
+    - name: Install
+      shell: bash
+      run: |
+        python ./install.py ${{ needs.meta.outputs.tag }}
+    - 
     - name: Download MFA
       if: ${{ matrix.os != 'android' }}
       uses: robinraju/release-downloader@v1
