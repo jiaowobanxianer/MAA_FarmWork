@@ -25,13 +25,17 @@
         },
         {
             "name": "对战",
-            "entry": "开始对战",
+            "entry": "对战",
             "repeatable": true,
-            "repeat_coutn": 5
+            "repeat_count": 5
         },
         {
             "name": "礼包领取",
             "entry": "灵宝"
+        },
+        {
+            "name": "返回",
+            "entry": "返回"
         }
     ]
 }

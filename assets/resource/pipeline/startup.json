@@ -9,21 +9,24 @@
         ]
     },
     "关闭游戏": {
+        "recognition": "OCR",
+        "expected": [
+            "健康系统"
+        ],
         "action": "StopApp",
-        "package": "com.tencent.tmgp.sgame"
+        "package": "com.tencent.tmgp.sgame",
+        "focus": true,
+        "focus_tip": "检测到健康系统",
+        "focus_succeeded": "退出游戏"
     },
     "登录游戏": {
         "recognition": "TemplateMatch",
         "template": "开始游戏.png",
+        "post_delay": 30000,
         "action": "Click",
         "timeout": 100000,
         "next": [
             "主页面"
-        ],
-        "interrupt": [
-            "更新游戏",
-            "叉",
-            "返回"
         ]
     },
     "更新游戏": {

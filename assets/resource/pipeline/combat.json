@@ -1,18 +1,12 @@
 {
-    "开始对战": {
-        "post_delay": 20000,
-        "next": [
-            "对战"
-        ]
-    },
     "对战": {
         "recognition": "OCR",
         "expected": [
             "对战"
         ],
+        "timeout": 30000,
         "action": "Click",
         "next": [
-            "对战",
             "55"
         ],
         "focus": true,

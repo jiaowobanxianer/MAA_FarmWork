@@ -29,6 +29,7 @@
             "返回.png",
             "返回2.png"
         ],
+        "timeout": 10000,
         "threshold": 0.8,
         "action": "Click",
         "next": [],
@@ -36,6 +37,7 @@
         "on_error": [
             "啥也不干"
         ],
+        "post_wait_freezes": 5000,
         "focus": true,
         "focus_tip": "返回",
         "focus_succeeded": "返回成功"
