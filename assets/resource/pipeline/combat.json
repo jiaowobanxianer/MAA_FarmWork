@@ -12,10 +12,11 @@
         ],
         "action": "Click",
         "next": [
+            "对战",
             "55"
         ],
         "focus": true,
-        "focus_tip": "开始对战"
+        "focus_successed": "点击对战"
     },
     "55": {
         "recognition": "TemplateMatch",
@@ -23,7 +24,9 @@
         "action": "Click",
         "next": [
             "人机"
-        ]
+        ],
+        "focus": true,
+        "focus_successed": "55模式"
     },
     "人机": {
         "recognition": "TemplateMatch",
@@ -31,7 +34,9 @@
         "action": "Click",
         "next": [
             "青铜"
-        ]
+        ],
+        "focus": true,
+        "focus_successed": "人机训练"
     },
     "青铜": {
         "recognition": "TemplateMatch",

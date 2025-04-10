@@ -20,7 +20,8 @@
             "啥也不干"
         ],
         "focus": true,
-        "focus_tip": "关闭弹窗"
+        "focus_tip": "弹窗",
+        "focus_successed": "关闭成功"
     },
     "返回": {
         "recognition": "TemplateMatch",
@@ -28,9 +29,13 @@
             "返回.png",
             "返回2.png"
         ],
+        "threshold": 0.8,
+        "action": "Click",
         "next": [],
         "interrupt": [],
-        "action": "Click",
+        "on_error": [
+            "啥也不干"
+        ],
         "focus": true,
         "focus_tip": "返回",
         "focus_successed": "返回成功"
