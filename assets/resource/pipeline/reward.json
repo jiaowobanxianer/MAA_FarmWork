@@ -1,0 +1,207 @@
+{
+    "灵宝亲密度": {
+        "recognition": "TemplateMatch",
+        "template": "灵宝亲密度.png",
+        "action": "Click"
+    },
+    "灵宝": {
+        "recognition": "TemplateMatch",
+        "template": "对战.png",
+        "target": [
+            1173,
+            595,
+            54,
+            66
+        ],
+        "action": "Click"
+    },
+    "礼包领取": {
+        "recognition": "TemplateMatch",
+        "template": "局内陪伴.png",
+        "target": [
+            58,
+            558,
+            64,
+            121
+        ],
+        "action": "Click",
+        "next": [
+            "综合领奖",
+            "礼册",
+            "战令",
+            "商城",
+            "邮件",
+            "点击界面任意位置关闭OCR"
+        ],
+        "interrupt": [
+            "叉"
+        ]
+    },
+    "综合领奖": {
+        "recognition": "OCR",
+        "expected": [
+            "综合领奖"
+        ],
+        "action": "Click",
+        "target_offset": [
+            0,
+            180,
+            1,
+            1
+        ],
+        "next": [
+            "收下"
+        ]
+    },
+    "收下": {
+        "recognition": "OCR",
+        "expected": [
+            "收下"
+        ],
+        "action": "Click",
+        "next": [
+            "点击继续OCR"
+        ]
+    },
+    "礼册": {
+        "recognition": "OCR",
+        "expected": [
+            "礼册"
+        ],
+        "action": "Click",
+        "target_offset": [
+            0,
+            180,
+            1,
+            1
+        ],
+        "next": [
+            "礼册领取"
+        ]
+    },
+    "礼册领取": {
+        "recognition": "TemplateMatch",
+        "template": "礼册领取.png",
+        "action": "Click",
+        "next": [
+            "点击继续OCR"
+        ]
+    },
+    "点击继续OCR": {
+        "recognition": "OCR",
+        "expected": [
+            "点击继续"
+        ],
+        "action": "Click",
+        "next": [
+            "自动升级",
+            "返回",
+            "点击界面任意位置关闭OCR"
+        ]
+    },
+    "自动升级": {
+        "recognition": "OCR",
+        "expected": [
+            "自动升级"
+        ],
+        "action": "Click",
+        "next": [
+            "点击继续OCR"
+        ]
+    },
+    "返回": {
+        "recognition": "TemplateMatch",
+        "template": "返回.png",
+        "action": "Click"
+    },
+    "战令": {
+        "recognition": "OCR",
+        "expected": [
+            "战令"
+        ],
+        "action": "Click",
+        "target_offset": [
+            0,
+            180,
+            1,
+            1
+        ],
+        "next": [
+            "一键领取OCR"
+        ]
+    },
+    "一键领取OCR": {
+        "recognition": "OCR",
+        "expected": [
+            "一键领取"
+        ],
+        "action": "Click",
+        "next": [
+            "确定OCR",
+            "点击继续OCR"
+        ]
+    },
+    "确定OCR": {
+        "recognition": "OCR",
+        "expected": [
+            "确定"
+        ],
+        "action": "Click",
+        "next": [
+            "返回"
+        ]
+    },
+    "商城": {
+        "recognition": "OCR",
+        "expected": [
+            "商城"
+        ],
+        "action": "Click",
+        "target_offset": [
+            0,
+            180,
+            1,
+            1
+        ],
+        "next": [
+            "领取OCR"
+        ]
+    },
+    "领取OCR": {
+        "recognition": "OCR",
+        "expected": [
+            "领取"
+        ],
+        "action": "Click",
+        "next": [
+            "确定OCR",
+            "点击继续OCR"
+        ]
+    },
+    "点击界面任意位置关闭OCR": {
+        "recognition": "OCR",
+        "expected": [
+            "点击界面任意位置关闭"
+        ],
+        "action": "Click",
+        "next": [
+            "返回"
+        ]
+    },
+    "邮件": {
+        "recognition": "OCR",
+        "expected": [
+            "商城"
+        ],
+        "action": "Click",
+        "target_offset": [
+            0,
+            180,
+            1,
+            1
+        ],
+        "next": [
+            "一键领取OCR"
+        ]
+    }
+}
