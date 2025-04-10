@@ -16,7 +16,7 @@
             "55"
         ],
         "focus": true,
-        "focus_successed": "点击对战"
+        "focus_succeeded": "点击对战"
     },
     "55": {
         "recognition": "TemplateMatch",
@@ -26,7 +26,7 @@
             "人机"
         ],
         "focus": true,
-        "focus_successed": "55模式"
+        "focus_succeeded": "55模式"
     },
     "人机": {
         "recognition": "TemplateMatch",
@@ -36,7 +36,7 @@
             "青铜"
         ],
         "focus": true,
-        "focus_successed": "人机训练"
+        "focus_succeeded": "人机训练"
     },
     "青铜": {
         "recognition": "TemplateMatch",

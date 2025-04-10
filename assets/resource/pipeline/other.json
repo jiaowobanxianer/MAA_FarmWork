@@ -21,7 +21,7 @@
         ],
         "focus": true,
         "focus_tip": "弹窗",
-        "focus_successed": "关闭成功"
+        "focus_succeeded": "关闭成功"
     },
     "返回": {
         "recognition": "TemplateMatch",
@@ -38,7 +38,7 @@
         ],
         "focus": true,
         "focus_tip": "返回",
-        "focus_successed": "返回成功"
+        "focus_succeeded": "返回成功"
     },
     "啥也不干": {
         "action": "DoNothing",
