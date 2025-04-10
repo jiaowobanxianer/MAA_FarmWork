@@ -11,7 +11,7 @@
     "关闭游戏": {
         "recognition": "OCR",
         "expected": [
-            "健康系统"
+            "在线时长"
         ],
         "action": "StopApp",
         "package": "com.tencent.tmgp.sgame",
