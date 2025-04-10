@@ -1,17 +1,21 @@
 {
     "开始对战": {
-        "post_delay": 10000,
+        "post_delay": 20000,
         "next": [
             "对战"
         ]
     },
     "对战": {
-        "recognition": "TemplateMatch",
-        "template": "对战.png",
+        "recognition": "OCR",
+        "expected": [
+            "对战"
+        ],
         "action": "Click",
         "next": [
             "55"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "开始对战"
     },
     "55": {
         "recognition": "TemplateMatch",
@@ -43,7 +47,9 @@
         "action": "Click",
         "next": [
             "开始匹配"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "进入房间"
     },
     "开始匹配": {
         "recognition": "TemplateMatch",
@@ -65,7 +71,9 @@
         "next": [
             "选择英雄",
             "确认游戏"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "确定"
     },
     "选择英雄": {
         "recognition": "OCR",
@@ -90,7 +98,9 @@
         "timeout": 100000,
         "next": [
             "加载游戏"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "选择英雄"
     },
     "加载游戏": {
         "recognition": "TemplateMatch",
@@ -116,7 +126,9 @@
         "action": "Click",
         "next": [
             "点击继续"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "游戏结束"
     },
     "点击继续": {
         "recognition": "OCR",
@@ -126,7 +138,9 @@
         "action": "Click",
         "next": [
             "再次点击继续"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "结算"
     },
     "再次点击继续": {
         "recognition": "OCR",
@@ -150,6 +164,8 @@
         "recognition": "TemplateMatch",
         "template": "返回大厅.png",
         "action": "Click",
-        "next": []
+        "next": [],
+        "focus": true,
+        "focus_tip": "返回大厅"
     }
 }

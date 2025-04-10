@@ -2,8 +2,7 @@
     "Default": {
         "interrupt": [
             "叉",
-            "返回",
-            "叉OCR"
+            "返回"
         ]
     }
 }

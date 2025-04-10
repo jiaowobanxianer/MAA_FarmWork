@@ -26,12 +26,6 @@
             "返回"
         ]
     },
-    "主页面": {
-        "recognition": "TemplateMatch",
-        "template": "对战.png",
-        "action": "DoNothing",
-        "next": []
-    },
     "更新游戏": {
         "recognition": "TemplateMatch",
         "template": "确定.png",

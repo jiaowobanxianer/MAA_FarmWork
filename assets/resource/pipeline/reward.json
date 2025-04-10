@@ -58,7 +58,9 @@
         ],
         "next": [
             "收下"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "综合领奖"
     },
     "收下": {
         "recognition": "OCR",
@@ -84,7 +86,9 @@
         ],
         "next": [
             "礼册领取"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "礼册领奖"
     },
     "礼册领取": {
         "recognition": "TemplateMatch",
@@ -130,7 +134,9 @@
         ],
         "next": [
             "一键领取OCR"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "战令领奖"
     },
     "一键领取OCR": {
         "recognition": "OCR",
@@ -167,7 +173,9 @@
         ],
         "next": [
             "领取OCR"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "商城领奖"
     },
     "领取OCR": {
         "recognition": "OCR",
@@ -204,6 +212,8 @@
         ],
         "next": [
             "一键领取OCR"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "邮件领取"
     }
 }

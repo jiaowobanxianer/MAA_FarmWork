@@ -1,0 +1,13 @@
+{
+    "返回主菜单": {
+        "next": [
+            "主页面"
+        ]
+    },
+    "主页面": {
+        "recognition": "TemplateMatch",
+        "template": "对战.png",
+        "action": "DoNothing",
+        "next": []
+    }
+}

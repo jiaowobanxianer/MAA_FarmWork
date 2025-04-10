@@ -22,39 +22,22 @@
         "focus": true,
         "focus_tip": "关闭弹窗"
     },
-    "叉OCR": {
-        "recognition": "OCR",
-        "expected": [
-            "X",
-            "x"
-        ],
-        "roi": [
-            731,
-            4,
-            548,
-            308
-        ],
-        "action": "Click",
-        "next": [],
-        "interrupt": [],
-        "timeout": 10000,
-        "on_error": [
-            "啥也不干"
-        ],
-        "focus": true,
-        "focus_tip": "关闭弹窗"
-    },
     "返回": {
         "recognition": "TemplateMatch",
         "template": [
             "返回.png",
             "返回2.png"
         ],
+        "next": [],
+        "interrupt": [],
         "action": "Click",
         "focus": true,
-        "focus_tip": "返回"
+        "focus_tip": "返回",
+        "focus_successed": "返回成功"
     },
     "啥也不干": {
-        "action": "DoNothing"
+        "action": "DoNothing",
+        "next": [],
+        "interrupt": []
     }
 }
