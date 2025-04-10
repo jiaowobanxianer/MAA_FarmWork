@@ -47,8 +47,16 @@
         "focus_succeeded": "人机训练"
     },
     "青铜": {
-        "recognition": "TemplateMatch",
-        "template": "倔强青铜.png",
+        "recognition": "OCR",
+        "expected": [
+            "倔强青铜"
+        ],
+        "roi": [
+            387,
+            124,
+            437,
+            98
+        ],
         "action": "Click",
         "next": [
             "开始练习"
@@ -57,8 +65,16 @@
         "focus_succeeded": "开始练习"
     },
     "开始练习": {
-        "recognition": "TemplateMatch",
-        "template": "开始练习.png",
+        "recognition": "OCR",
+        "expected": [
+            "开始练习"
+        ],
+        "roi": [
+            924,
+            518,
+            260,
+            90
+        ],
         "action": "Click",
         "next": [
             "开始匹配"

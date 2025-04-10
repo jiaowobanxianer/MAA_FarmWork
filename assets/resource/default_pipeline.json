@@ -2,7 +2,9 @@
     "Default": {
         "interrupt": [
             "叉",
-            "返回",
+            "返回"
+        ],
+        "on_error": [
             "关闭游戏"
         ]
     }
