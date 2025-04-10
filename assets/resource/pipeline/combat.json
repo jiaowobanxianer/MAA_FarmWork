@@ -1,45 +1,4 @@
 {
-    "启动游戏": {
-        "action": "StartApp",
-        "package": "com.tencent.tmgp.sgame",
-        "timeout": 100000,
-        "next": [
-            "登录游戏"
-        ]
-    },
-    "关闭游戏": {
-        "action": "StopApp",
-        "package": "com.tencent.tmgp.sgame"
-    },
-    "登录游戏": {
-        "recognition": "TemplateMatch",
-        "template": "开始游戏.png",
-        "action": "Click",
-        "post_delay": 10000,
-        "next": [
-            "关闭广告"
-        ]
-    },
-    "关闭广告OCR": {
-        "recognition": "OCR",
-        "expected": "X",
-        "order_by": "Vertical",
-        "action": "Click"
-    },
-    "关闭广告": {
-        "recognition": "TemplateMatch",
-        "template": "叉.png",
-        "action": "Click",
-        "next": [
-            "关闭广告"
-        ],
-        "on_error": [
-            "啥也不干"
-        ]
-    },
-    "啥也不干": {
-        "action": "DoNothing"
-    },
     "对战": {
         "recognition": "TemplateMatch",
         "template": "对战.png",
@@ -170,7 +129,7 @@
         ],
         "action": "Click",
         "next": [
-            "返回房间"
+            "返回大厅"
         ]
     },
     "返回房间": {
