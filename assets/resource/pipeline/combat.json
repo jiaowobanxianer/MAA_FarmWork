@@ -52,7 +52,9 @@
         "action": "Click",
         "next": [
             "开始练习"
-        ]
+        ],
+        "focus": true,
+        "focus_succeeded": "开始练习"
     },
     "开始练习": {
         "recognition": "TemplateMatch",
@@ -73,7 +75,9 @@
         ],
         "on_error": [
             "开始匹配"
-        ]
+        ],
+        "focus": true,
+        "focus_succeeded": "确认游戏"
     },
     "确认游戏": {
         "recognition": "OCR",
@@ -102,7 +106,9 @@
         ],
         "next": [
             "确定英雄"
-        ]
+        ],
+        "focus": true,
+        "focus_succeeded": "选择第一个英雄"
     },
     "确定英雄": {
         "recognition": "TemplateMatch",
@@ -113,7 +119,7 @@
             "加载游戏"
         ],
         "focus": true,
-        "focus_tip": "选择英雄"
+        "focus_succeeded": "确认选择"
     },
     "加载游戏": {
         "recognition": "TemplateMatch",
@@ -122,7 +128,9 @@
         "timeout": 100000,
         "next": [
             "游戏中"
-        ]
+        ],
+        "focus": true,
+        "focus_succeeded": "加载游戏界面"
     },
     "游戏中": {
         "recognition": "TemplateMatch",
@@ -131,7 +139,9 @@
         "timeout": 1800000,
         "next": [
             "游戏结束"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "等待游戏结束"
     },
     "游戏结束": {
         "recognition": "TemplateMatch",
@@ -163,7 +173,9 @@
         "action": "Click",
         "next": [
             "返回大厅"
-        ]
+        ],
+        "focus": true,
+        "focus_succeeded": "结算完成"
     },
     "返回房间": {
         "recognition": "TemplateMatch",
@@ -179,6 +191,6 @@
         "action": "Click",
         "next": [],
         "focus": true,
-        "focus_tip": "返回大厅"
+        "focus_succeeded": "返回大厅"
     }
 }

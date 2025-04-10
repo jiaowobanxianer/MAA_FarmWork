@@ -35,6 +35,8 @@
         "action": "Click",
         "next": [
             "登录游戏"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "检测到游戏更新"
     }
 }

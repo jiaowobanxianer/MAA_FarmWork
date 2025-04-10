@@ -23,7 +23,7 @@
             "灵宝"
         ],
         "focus": true,
-        "focus_tip": "等待zhong"
+        "focus_tip": "等待中"
     },
     "灵宝": {
         "recognition": "TemplateMatch",
@@ -38,7 +38,9 @@
         "action": "Click",
         "next": [
             "礼包领取"
-        ]
+        ],
+        "focus": true,
+        "focus_succeeded": "点击灵宝"
     },
     "礼包领取": {
         "recognition": "OCR",
@@ -65,7 +67,9 @@
             "商城",
             "邮件",
             "点击界面任意位置关闭OCR"
-        ]
+        ],
+        "focus": true,
+        "focus_succeeded": "打开领奖界面"
     },
     "综合领奖": {
         "recognition": "OCR",

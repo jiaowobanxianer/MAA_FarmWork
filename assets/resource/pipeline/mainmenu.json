@@ -1,13 +1,24 @@
 {
     "返回主菜单": {
+        "post_delay": 2000,
+        "next": [
+            "等待返回主页面"
+        ]
+    },
+    "等待返回主页面": {
+        "post_delay": 20000,
         "next": [
             "主页面"
-        ]
+        ],
+        "focus": true,
+        "focus_tip": "等待中"
     },
     "主页面": {
         "recognition": "TemplateMatch",
         "template": "对战.png",
         "action": "DoNothing",
-        "next": []
+        "next": [],
+        "focus": true,
+        "focus_succeeded": "返回主页面成功"
     }
 }
