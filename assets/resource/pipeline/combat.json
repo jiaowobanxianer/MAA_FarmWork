@@ -1,4 +1,10 @@
 {
+    "开始对战": {
+        "post_delay": 10000,
+        "next": [
+            "对战"
+        ]
+    },
     "对战": {
         "recognition": "TemplateMatch",
         "template": "对战.png",

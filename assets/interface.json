@@ -25,7 +25,7 @@
         },
         {
             "name": "对战",
-            "entry": "对战",
+            "entry": "开始对战",
             "repeatable": true,
             "repeat_coutn": 5
         },
