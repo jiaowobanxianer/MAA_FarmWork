@@ -33,6 +33,7 @@
         "next": [
             "人机"
         ],
+        "interrupt": [],
         "focus": true,
         "focus_succeeded": "55模式"
     },
@@ -41,6 +42,7 @@
         "template": "人机.png",
         "action": "Click",
         "post_delay": 1000,
+        "interrupt": [],
         "next": [
             "青铜"
         ],
@@ -52,6 +54,7 @@
         "expected": [
             "倔强青铜"
         ],
+        "interrupt": [],
         "roi": [
             387,
             124,
@@ -71,6 +74,7 @@
         "expected": [
             "开始练习"
         ],
+        "interrupt": [],
         "roi": [
             924,
             518,
@@ -86,8 +90,17 @@
         "focus_tip": "进入房间"
     },
     "开始匹配": {
-        "recognition": "TemplateMatch",
-        "template": "开始匹配.png",
+        "recognition": "OCR",
+        "expected": [
+            "开始匹配"
+        ],
+        "roi": [
+            661,
+            630,
+            225,
+            60
+        ],
+        "interrupt": [],
         "action": "Click",
         "next": [
             "确认游戏"
