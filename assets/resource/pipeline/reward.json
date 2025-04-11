@@ -1,7 +1,22 @@
 {
+    "亲密度": {
+        "post_delay": 2000,
+        "next": [
+            "亲密度等待"
+        ]
+    },
+    "亲密度等待": {
+        "post_delay": 10000,
+        "next": [
+            "灵宝亲密度"
+        ],
+        "focus": true,
+        "focus_tip": "等待中"
+    },
     "灵宝亲密度": {
         "recognition": "TemplateMatch",
         "template": "对战.png",
+        "timeout": 30000,
         "next": [
             "灵宝亲密度1"
         ]
@@ -83,6 +98,7 @@
             1,
             1
         ],
+        "post_delay": 1000,
         "next": [
             "收下"
         ],
@@ -94,6 +110,7 @@
         "expected": [
             "收下"
         ],
+        "post_delay": 1000,
         "action": "Click",
         "next": [
             "点击继续OCR"
@@ -118,8 +135,16 @@
         "focus_tip": "礼册领奖"
     },
     "礼册领取": {
-        "recognition": "TemplateMatch",
-        "template": "礼册领取.png",
+        "recognition": "OCR",
+        "expected": [
+            "领取"
+        ],
+        "roi": [
+            52,
+            563,
+            1199,
+            118
+        ],
         "action": "Click",
         "next": [
             "点击继续OCR"
@@ -130,6 +155,13 @@
         "expected": [
             "点击继续"
         ],
+        "roi": [
+            581,
+            608,
+            120,
+            64
+        ],
+        "post_delay": 5000,
         "action": "Click",
         "next": [
             "自动升级",
@@ -142,6 +174,13 @@
         "expected": [
             "自动升级"
         ],
+        "roi": [
+            967,
+            629,
+            213,
+            70
+        ],
+        "post_delay": 2000,
         "action": "Click",
         "next": [
             "点击继续OCR"
@@ -159,6 +198,7 @@
             1,
             1
         ],
+        "post_delay": 1000,
         "next": [
             "一键领取OCR"
         ],
@@ -170,6 +210,7 @@
         "expected": [
             "一键领取"
         ],
+        "post_delay": 1000,
         "action": "Click",
         "next": [
             "确定OCR",
@@ -181,6 +222,7 @@
         "expected": [
             "确定"
         ],
+        "post_delay": 1000,
         "action": "Click",
         "next": [
             "礼包领取"
@@ -191,6 +233,7 @@
         "expected": [
             "商城"
         ],
+        "post_delay": 1000,
         "action": "Click",
         "target_offset": [
             0,
