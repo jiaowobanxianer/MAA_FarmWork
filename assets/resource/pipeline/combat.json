@@ -40,6 +40,7 @@
         "recognition": "TemplateMatch",
         "template": "人机.png",
         "action": "Click",
+        "post_delay": 1000,
         "next": [
             "青铜"
         ],
@@ -57,6 +58,7 @@
             437,
             98
         ],
+        "post_delay": 1000,
         "action": "Click",
         "next": [
             "开始练习"
@@ -75,6 +77,7 @@
             260,
             90
         ],
+        "post_delay": 1000,
         "action": "Click",
         "next": [
             "开始匹配"
