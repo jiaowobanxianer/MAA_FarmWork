@@ -221,8 +221,23 @@
         "recognition": "TemplateMatch",
         "template": "返回大厅.png",
         "action": "Click",
-        "next": [],
+        "next": [
+            "确定"
+        ],
         "focus": true,
         "focus_succeeded": "返回大厅"
+    },
+    "确定": {
+        "recognition": "OCR",
+        "expected": [
+            "确定"
+        ],
+        "roi": [
+            659,
+            484,
+            208,
+            52
+        ],
+        "next": []
     }
 }
